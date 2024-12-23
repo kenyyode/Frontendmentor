@@ -47,15 +47,15 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
-    img {
-        max-height:20%;
-    }
+
 
     .grid-item {
         padding: 10px;
-        max-width: 20em;
+        max-width: 18em;
     
     }
+
+
     
 }
 
