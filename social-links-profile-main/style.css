@@ -1,0 +1,75 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+}
+
+.outer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    margin: 4% 0em 1em 0em;
+
+}
+
+.card {
+    background-color: hsl(0, 0%, 12%);
+    padding: 2em;
+    border-radius: 0.5em;
+    min-width: 20%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: none;
+}
+
+.buttons {
+    display: grid;
+}
+
+button{
+    border-radius: 0.5em;
+    border: none;
+    margin: 0.3em;
+    padding: 0.7em;
+    background-color: hsl(0, 0%, 20%);
+    color: #FFFFFF;
+}
+
+img {
+    border-radius: 5em;
+    width: 5em;
+    height: 5em;
+}
+
+.avatar {
+    display: grid;
+    justify-content: center;
+}
+
+.name {
+    font-weight: 700;
+    font-size: larger;
+    margin-bottom: 2%;
+}
+
+.subtitle{
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+    margin-top: 0%;
+    font-size: small;
+}
+
+#text{
+    font-weight: 400;
+    font-size: small;
+
+}

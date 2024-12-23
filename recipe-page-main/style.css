@@ -1,0 +1,168 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    background-color: white;
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+}
+
+hr {
+    opacity: 30%;
+}
+
+h1 {
+    font-family: "Young Serif", serif;
+}
+h2 {
+    color:hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+}
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.main{
+    display: grid;
+    width: 100%;
+    background-color: white;
+    
+}
+
+.textbody {
+    padding: 5%;
+
+}
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    width: 100%;
+}
+
+img {
+    height: auto;
+    width: 100%;
+   
+}
+
+
+.Prep h4 {
+    color: hsl(332, 51%, 32%);
+    font-weight: 400;
+    padding-left: 1em;
+}
+
+.Prep li {
+    font-weight: 400;
+    font-family: "Outfit", serif;
+    line-height: 1.5;
+    padding-left: 1em;
+    
+}
+
+.Prep li::marker{
+    color:hsl(332, 51%, 32%) ;
+    
+}
+
+.Prep {
+    background-color: hsl(330, 100%, 98%);
+    padding: 3%;
+    border-radius: 3%;
+    
+
+}
+
+
+.Ingredients li {
+    font-family: "Outfit", serif;
+    padding-left: 1em;
+    line-height: 2;
+}
+
+.Ingredients li::marker{
+    color: hsl(14, 45%, 36%);
+}
+
+.Ingredients h2 {
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
+}
+
+.Ingredients {
+    margin: 2em 0em 2em 0em;
+}
+
+.Instructions h2 {
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
+
+}
+
+.Instructions li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+.Instructions li {
+    font-family: "Outfit", serif;
+    margin: 0em 0em 0.5em 0em;
+    line-height: 1.2;
+}
+
+.Instructions {
+    margin-bottom: 2em;
+}
+table {
+    table-layout: fixed; /* Force fixed layout for equal column widths */
+    border-collapse: collapse;
+    width: 100%;
+    font-family: "Outfit", sans-serif;
+}
+
+td, th {
+    padding: 1em 1em 1em 2em;
+    border-bottom: 1px solid black;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr td:last-child{
+    color:hsl(14, 45%, 36%)
+}
+
+@media only screen and (min-width: 768px) {
+    .main {
+        width: 50%;
+        
+    }
+
+    body {
+        background-color: hsl(30, 54%, 90%);
+    }
+
+    .image {
+        padding: 5% 5% 0% 5%;
+    }
+
+    img {
+        border-radius: 0.5em;
+    }
+
+    .outer-container {
+        margin-top: 5em;
+    }
+
+    .main {
+        border-radius: 1em;
+    }
+}
