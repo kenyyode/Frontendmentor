@@ -1,0 +1,147 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+   font-family: "Poppins", serif;
+   color: hsl(234, 12%, 34%);
+   font-size: 15px;
+   background-color: hsl(0, 0%, 98%);
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.zero {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 0.5em;
+    max-width: 80%;
+    margin: auto;
+}
+
+.zero #first {
+    font-weight: 200;
+    margin-top: 3em;
+}
+
+.zero h2 {
+    margin: 0; 
+  }
+  
+.zero  h4 {
+    font-weight: 400;
+    color: hsl(229, 6%, 66%)
+
+}
+
+.item1, .item2, .item3, .item4{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2.5em;
+    border-radius: 0.5em;
+    margin: 1em;
+}
+
+.item1 {
+    box-shadow: 
+    inset 0px 3px 0px hsl(180, 62%, 55%), 
+    5px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+svg {
+    align-self: flex-end;
+    margin-top: 2em;
+}
+
+.item1 p, .item1 h3{
+    margin: 0em;
+}
+
+.item1 p {
+    color: hsl(229, 6%, 66%) ;
+}
+
+
+
+.item2 {
+    box-shadow: 
+    inset 0px 3px 0px hsl(0, 78%, 62%), 
+    5px 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 23em;
+}
+
+.item2 p, .item2 h3{
+    margin: 0em;
+}
+
+.item2 p {
+    color: hsl(229, 6%, 66%) ;
+}
+
+.item3 {
+    box-shadow: 
+    inset 0px 3px 0px hsl(34, 97%, 64%), 
+    5px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.item3 p, .item3 h3{
+    margin: 0em;
+}
+
+.item3 p {
+    color: hsl(229, 6%, 66%) ;
+}
+
+
+.item4 {
+    box-shadow: 
+    inset 0px 3px 0px hsl(212, 86%, 64%), 
+    5px 10px 30px rgba(0, 0, 0, 0.2);
+    margin: 1em;
+    max-width: 23em;
+}
+
+
+.item4 p, .item4 h3{
+    margin: 0em;
+}
+
+.item4 p {
+    color: hsl(229, 6%, 66%) ;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .zero {
+        max-width: 23em;
+    }
+    .container {
+        grid-template-columns: auto auto auto;
+        max-width: 80%;
+        margin: auto;
+    }
+    .item1 {
+        grid-row: 1 / span 2;
+        grid-column: 1;
+    }
+
+    .item2 {
+        grid-row: 1;
+        grid-column: 2;
+        max-width: none;
+    }
+    .item3 {
+        grid-row:2;
+        grid-column: 2;
+    }
+    .item4{
+        grid-row: 1 / span 2;
+        grid-column: 3;
+    }
+}

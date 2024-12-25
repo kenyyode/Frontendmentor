@@ -1,7 +1,10 @@
 
 body {
-    background-color: #F9F9F9;
-}
+    font-family: "Poppins", serif;
+    color: hsl(234, 12%, 34%);
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+ }
 
 a {
     text-decoration: none;
@@ -13,10 +16,35 @@ h1 {
     font-family: "Inter", sans-serif;
 }
 
-.item1 {
-    background-color: #FFFFFF;
-    padding: 0.5em;
-    border-radius: 0.2em;
-    margin: 0.2em;
 
+.item1, .item2 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2.5em;
+    border-radius: 0.5em;
+    margin: 1em;
+}
+
+.item1 {
+    box-shadow: 
+    inset 0px 3px 0px hsl(180, 62%, 55%), 
+    5px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.head {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 0.5em;
+    max-width: 80%;
+    margin: auto;
+}
+
+.item2 {
+    box-shadow: 
+    inset 0px 3px 0px hsl(0, 78%, 62%), 
+    5px 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 23em;
 }
