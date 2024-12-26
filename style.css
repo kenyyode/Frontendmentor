@@ -47,3 +47,10 @@ h1 {
     inset 0px 3px 0px hsl(0, 78%, 62%), 
     5px 10px 30px rgba(0, 0, 0, 0.2);
 }
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        max-width: 70%;
+        margin: auto;
+    }
+}
