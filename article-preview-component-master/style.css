@@ -161,8 +161,8 @@ main {
         display: none;
         position: absolute;
         border-radius: 2em;
-        top: 56%;
-        left: 63%;
+        top: 54%;
+        left: calc(59% + 2rem);
         transform: translateY(-50%); /* Center it vertically relative to .icon-container */
         z-index: 10; 
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -190,4 +190,11 @@ main {
       }
 
 
+}
+
+@media only screen and (min-width: 1025px) {
+    .active {
+        top: 54%;
+        left: calc(55% + 3rem);
+    }
 }
