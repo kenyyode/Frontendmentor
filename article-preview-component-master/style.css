@@ -136,7 +136,7 @@ main {
         margin: 0;
         height: 100%;
         grid-row: 1 / span 2;
-        object-fit: fill;
+        object-fit: cover;
     }
     
     .drawer img {
