@@ -1,0 +1,246 @@
+.attribution { font-size: 11px; text-align: center; margin-top: var(--xl);}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* basic set up */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    /* colors */
+    --Tomato: hsl(4, 100%, 67%);
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+
+    /* font size */
+
+    --text-base-font-size: 1rem; 
+    --text-base-line-height: 1.5rem;
+
+    /* border radius */
+    --border-radius: 0.5rem;
+
+    /* sizes */ 
+    --small: 0.5rem;
+    --medium: 1rem;
+    --large: 1.5rem;
+    --xl: 2rem;
+    --xxl: 4rem;
+
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: 
+        url('./assets/fonts/Roboto-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: 
+        url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+body{
+    font-family: "Roboto";
+}
+
+body p {
+    font-size: 16px;
+    line-height: var(--text-base-line-height);
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Removes default bullets */
+}
+
+/* components */
+
+.btn {
+    width: 100%;
+    padding: var(--medium);
+    background-color: var(--DarkSlateGrey);
+    border: none;
+    color: var(--White);
+    border-radius: var(--border-radius);
+}
+
+
+
+/* mobile */
+
+main {
+    background-color: var(--White);
+    width: 100%;
+}
+
+.header-wrapper img {
+    width: 100%;
+}
+
+.form-wrapper {
+    padding: var(--xl);
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--xxl);
+}
+
+form input {
+    padding: var(--medium);
+    border-radius: var(--border-radius);
+    margin: var(--small) 0;
+}
+
+
+
+h1 {
+    margin-bottom: var(--medium);
+}
+
+ul {
+    margin: var(--xl) 0;
+    list-style-image: url('./assets/images/icon-list.svg');
+    padding-left: 1.5rem;
+}
+
+li {
+    padding-left: var(--medium);
+    align-items: center;
+    margin: var(--small);
+
+}
+
+label {
+    display: flex;
+    justify-content: space-between; 
+    font-weight: bold; 
+}
+
+label span {
+    color: var(--Tomato);
+}
+
+
+/* success */
+
+.success-layout{
+    display: none;
+}
+
+.success-wrapper {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: var(--medium);
+    height: 100vh;
+    gap: 15rem;
+}
+
+.active {
+    display: grid;
+}
+
+.hidden {
+    display: none;
+}
+
+.success p {
+    line-height: var(--text-base-line-height);
+    font-size: var(--text-base-font-size);
+    
+}
+
+.success img {
+    margin-bottom: var(--xl);
+}
+
+.success-wrapper .btn {
+    margin-bottom: var(--xl);
+}
+
+
+
+
+@media only screen and (min-width: 768px){
+
+    .header-wrapper {
+        grid-area: image;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .form-wrapper {
+        grid-area: form;
+    }
+
+ main {
+    display: grid;
+    grid-template-areas: "form image";
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    max-width: 46em;
+    height: auto;
+    margin: 0 auto;
+    padding: var(--large);
+    border-radius: var(--xl);
+ }
+
+ .layout-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    height: 100vh;
+    background-color: var(--DarkSlateGrey);
+
+ }
+
+ .success-layout{
+    display: none;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--DarkSlateGrey);
+    height: 100vh;
+ }
+ .success-wrapper {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--White);
+    height: fit-content;
+    gap: 2rem;
+    max-width: 25em;
+    border-radius: var(--large);
+    padding: var(--large);
+ }
+
+ .hidden {
+    display: none;
+}
+
+.active {
+    display: grid;
+}
+
+button:hover {
+    background-image: linear-gradient(to right, var(--Tomato), #fc9348);
+}
+
+}
