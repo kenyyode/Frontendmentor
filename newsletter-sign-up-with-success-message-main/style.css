@@ -194,8 +194,8 @@ label span {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
-    width: fit-content;
-    max-width: 46em;
+    width: 46em;
+    max-width: fit-content;
     height: auto;
     margin: 0 auto;
     padding: var(--large);
