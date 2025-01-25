@@ -194,8 +194,7 @@ label span {
     align-items: center;
     justify-content: center;
     width: fit-content;
-    max-width: 46em;
-    height: auto;
+    max-width: 50em;
     margin: 0 auto;
     padding: var(--large);
     border-radius: var(--xl);
