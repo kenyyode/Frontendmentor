@@ -151,7 +151,6 @@ label span {
 .active {
     display: grid;
 }
-
 .hidden {
     display: none;
 }
@@ -194,8 +193,8 @@ label span {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
-    width: 46em;
-    max-width: fit-content;
+    width: fit-content;
+    max-width: 46em;
     height: auto;
     margin: 0 auto;
     padding: var(--large);
